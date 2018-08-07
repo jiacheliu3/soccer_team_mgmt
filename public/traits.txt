@@ -1,0 +1,246 @@
+Defending PPMs
+PPM
+How player acts
+High values of attributes required
+Good for
+Dives into tackles*	Slides often regardless of instructions.	Tackling 
+Anticipation 
+Decisions	Defensive midfielders and wing backs. 
+
+Ex: Pepe
+Does not dive into tackles	Does not goes into sliding tackles regardless of instructions.	-	For defensive players with poor Tackling, Anticipation, Decisions. 
+
+Ex: Maroune Fellaini
+Marks opponent tightly	Always marks his opponent tightly regardless of instructions.	Marking 
+Tackling 
+Concentration 
+Positioning 
+Anticipation	Central defenders. Though it’s a risky PPM if you have a slow DC versus fast opponent’s striker. 
+
+Ex: Mamadou Sakho
+* Dives into tackles is my favourite defensive player preferred move. It’s because I like to use much of hard tackling and closing down in my tactical approaches.
+
+Discipline PPM
+Argues with official. Here is the only PPM that can’t be considered as positive because it can result in additional yellow/red cards for for your player. Though it has one positive effect: players with this PPM are more fired up during big matches.
+Example: Wayne Rooney.
+
+Finishing PPMs
+PPM
+How player acts
+High values of attributes required
+Good for
+Attempts overhead kicks	Attempts to score goals using bicycle kick.	Technique 
+Finishing 
+Anticipation 
+Flair	Strikers and inside forwards.
+Hits free kicks with power	Makes powerful strikes from free kicks.	Free Kicks 
+Long Shots 
+Technique	Any player who is your main free kick taker. 
+
+Ex: Sergio Ramos
+Likes to lob keeper	Performs a high trajectory shot (lob shot) when one-on-one.	Technique 
+Finishing 
+Composure 
+Decisions	Strikers 
+
+Ex: Ganso
+Likes to round keeper	Tends to dribble past a goalie during one-on-ones.	Dribbling 
+Technique 
+Acceleration 
+Agility 
+Pace	Strikers with low Finishing
+
+Ex: Leo Messi
+Places shots*	Aims to corners of the net during shots.	Finishing 
+Composure 
+Technique	Strikers 
+
+Ex: Karim Benzema
+Shoots from distance	Makes long shots more often.	Long Shots 
+Decisions 
+Technique	Any attacking player. Most efficiently used by central midfielders. 
+
+Ex: Mario Balotelli
+Shoots with power	Performs powerful strikes that are difficult for goalies to parry.	Finishing 
+Technique	Strikers and attacking midfielders without high level of Composure. 
+
+Ex: Wesley Sneijder
+Tries first time shots	Hits the ball with first touch receiving a pass.	First Touch 
+Finishing 
+Composure 
+Technique 
+Anticipation	Strikers, inside forwards. 
+
+Ex: Fernando Torres
+Tries long range free kicks	Shoots from any free kick regardless of distance.	Free Kicks 
+Long Shots 
+Technique	Any free kick taker with the attributes required. 
+
+Ex: Hulk 
+* The most useful PPM in common cases is Places shots. Normally it increases amount of scored goals for strikers having high values of required attributes.
+
+Movement PPMs
+PPM
+How player acts
+High values of attributes required
+Good for
+Arrives late in opposition area	Awaits for a moment to join attack in the second tempo trying to find a space for himself.	Anticipation 
+Decisions 
+Off the Ball 
+Creativity	Central midfielders. 
+
+Ex: Frank Lampard
+Comes deep to get ball	Moves closer to players passing the ball. Prefers to create opportunities from deep.	Decisions 
+Creativity 
+Passing 
+Anticipation	Playmakers, support wingers, deep lying forwards. 
+
+Ex: Thomas Muller
+Cuts inside	Cuts inside from flank looking to drive a goal.	Dribbling 
+Pace 
+Acceleration 
+Decisions 
+Creativity	Inside forwards with strong opposite feet. 
+
+Ex: Arjen Robben
+Dwells on ball	Hold the ball thinking more time over passing opportunities.	-	Negative PPM. 
+
+Ex: Xabi Alonso
+Gets forward whenever possible*	Makes often forward runs regardless of instructions.	Anticipation 
+Decisions 
+Off the Ball 
+Pace 
+Acceleration	Full backs, wingers, central midfielders of box-to-box type. 
+
+Ex: Marek Hamsik
+Gets into opposition area	Enters opponent’s penalty area as soon as possible during attacks.	Off the Ball 
+Anticipation 
+Decisions 
+First Touch	Central midfielders, any attacking players. 
+
+Ex: Leo Messi
+Hugs line	Runs with the ball closer to touchline.	Crossing 
+Passing 
+Pace 
+Acceleration	Wingers, wing backs. 
+
+Ex: Gael Clichy
+Knocks ball past opponent	Plays ball into space beyond opponent running at it after that.	Acceleration 
+Pace 
+Decisions	Quick players with poor Dribbling. 
+
+Ex: Andre Schurrle
+Likes to try to beat offside trap	Plays at defenders last line on the offside verge.	Off the Ball 
+Decisions 
+Anticipation 
+Pace 
+Acceleration	Strikers 
+
+Ex: Javier Hernandez
+Moves into channels	Looks for space between opponents defensive players.	Off the Ball 
+Anticipation 
+Decisions	Any attacking player. 
+
+Ex: Gonzalo Higuain
+Plays one-twos	Makes a pass before forward run expecting to receive the ball back.	First Touch 
+Passing 
+Off the Ball 
+Teamwork 
+Acceleration	Any attacking player. 
+
+Ex: Andres Iniesta
+Plays with back to goal	Receives the ball being turned out from opponents goalie.	Strength 
+Teamwork 
+Balance	Great for tough target man strikers. 
+
+Ex: Fernando Llorente
+Runs rarely with ball	Tends to avoid dribbling the ball.	-	For players with poor Dribbling, Pace, Acceleration. 
+
+Ex: Toni Kroos
+Runs with ball often	Regularly attempts dribbling the ball past opponent.	Dribbling 
+Pace 
+Acceleration 
+Flair 
+Agility	Strikers, wingers, attacking midfielders. 
+
+Ex: Cristiano Ronaldo
+Runs with ball through centre	Dribbles the ball through the middle of the pitch.	Dribbling 
+Pace 
+Acceleration 
+Flair 
+Agility	Strikers, attacking midfielders. 
+
+Ex: Sergio Aguero
+Runs with ball down left (or right)	Dribbles the ball through the one of the flank defined by last word in the PPM name.	Dribbling 
+Pace 
+Acceleration 
+Flair 
+Agility	Wingers 
+
+Ex: Marcelo
+Stays back at all times	Stays at his position without attempting forward runs		Defensive midfielders, defenders.
+Tries to play way out of trouble	Dribbles into space during closing down or tight marking.	Dribbling 
+Decisions 
+Agility 
+Acceleration 
+Pace	Warning: It will result in ball losses when player has no good technique level. 
+
+Ex: Gerard Pique
+* Gets forward whenever possible can be met often. Nevertheless it’s perhaps my favourite movement PPM due to attacking tactical approach I advocate.
+
+Passing PPMs
+PPM
+How player acts
+High values of attributes required
+Good for
+Dictates tempo	Rules ball passing tempo using his mental abilities.	Creativity 
+Decisions 
+Determination	Playmakers 
+
+Ex: Cesc Fabregas
+Likes to switch ball to other flank	Passes the ball to opposite flank when he sees more space for attack on it.	Passing 
+Technique 
+Decisions 
+Creativity	Full backs, wide midfielders. 
+
+Ex: Daniel Alves
+Looks for pass rather than attempting to score	Often makes passes being in shooting positions.		Attacking players with poor Finishing and Composure. 
+
+Ex: Mario Gotze
+Plays no through balls	Doesn’t passes the ball through defense.		Defenders and defensive midfielders with low Technique, Passing, Decisions.
+Plays short simple passes	Makes passes to the most closest teammates.		Centre backs, defensive midfielders. 
+
+Ex: Sergio Busquets
+Stops play	Holds the ball, reduces tempo looking for prospective passing opportunities.	Strength 
+Balance	Central midfielders
+Tries killer balls often*	Often attempts through balls.	Passing 
+Technique 
+Creativity 
+Decisions 
+Flair	Playmakers, central midfielders 
+
+Ex: Mesut Ozil
+Tries long range passes	Makes direct long passes often.	Passing 
+Technique 
+Creativity 
+Decisions	Any defender or midfielder when playing direct football with target man or quick wingers. 
+
+Ex: Yaya Toure
+* Playmaker with Tries killer balls often generates more goal chances than without it.
+
+Technique PPMs
+PPM
+How player acts
+High values of attributes required
+Good for
+Avoids using weaker foot	Uses his strong foot much more often than weaker one.		Any one-footed player. 
+
+Ex: Giuseppe Rossi
+Curls ball*	Spins the ball when shooting and crossing.	Technique	Wingers, playmakers. 
+Also extremely good for corner and free kick takers. 
+
+Ex: Gareth Bale
+Possesses long flat throw	Executes long flat bullet throws during attacking throw-ins.	Long Throws 
+Balance	Throw-in takers 
+
+Ex: Rory Delap

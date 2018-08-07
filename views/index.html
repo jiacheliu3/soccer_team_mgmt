@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+    <style>
+    body {
+        font: 12px sans-serif;
+    }
+
+    #attribute-panel {
+        margin: 15px 15px;
+    }
+
+    .attribute-row {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    </style>
+    <style>
+    h1 {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 22px;
+        font-style: bold;
+    }
+
+    p {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 16px;
+    }
+    </style>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="col-sm-12">
+        <form class="form-horizontal" action="#">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Name:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="name" placeholder="Enter name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email:</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Foot:</label>
+                <div class="col-sm-10">
+                    <select class="form-control" id="sel1">
+                        <option>Left</option>
+                        <option>Right</option>
+                        <option>Both</option>
+                        <option>I'm a goalie</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Attribute panel zone-->
+            <div class="form-group">
+                <div class="panel panel-default" id="attribute-panel">
+                    <div class="panel-heading">Attribute Panel</div>
+                    <div class="panel-body">
+                        <!-- Play attribute bars generated here -->
+                        <div id="attribute-radar"></div>
+                    </div>
+                </div>
+                <!-- End of attribute panel -->
+            </div>
+            <!-- Pitch & position panel -->
+            <div class="form-group">
+                <div class="panel panel-default" id="pitch-panel">
+                    <div class="panel-heading">Select your favorate positions</div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div id="pitch"></div>
+                        </div>
+                        <div class="row">
+                            <div id="player-role">
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="player-role-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Player Roles <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                                <div id="#player-role-attr"></div>
+                                <div id="#player-role-desc"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of pitch -->
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Remember me</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <!-- <button type="submit" class="btn btn-default">Submit</button>
+           -->
+                    <button class="btn btn-default" onclick="generate_report()">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <h1> A d3.js soccer pitch </h1>
+    <script src="https://d3js.org/d3.v3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+    var SKILLS = ["defending", "physical", "speed", "creativity", "attacking", "technical", "aerial", "mental"];
+
+    function generate_attribute_panel(selector) {
+        console.log("Generating attribute panel");
+
+        var panel = $(selector);
+        for (var i = 0; i < SKILLS.length; i++) {
+            var bar = create_bar(SKILLS[i]);
+            console.log(bar.html());
+            panel.append(bar);
+        }
+        console.log("Attribute panel generated");
+    }
+
+    function create_bar(name) {
+        var bar_div = $('<div class="attribute-bar">');
+        var label = $('<label class="control-label col-sm-2">');
+        label.text(name.charAt(0).toUpperCase() + name.substr(1));
+        var bar = $('<div class="col-sm-6"><input type="range" id="' + name + '-bar"  class="attribute-bar" value="1" max="20"></div>');
+        var value = $('<div id="' + name + '-value" class="col-sm-2">1</div>');
+
+        bar_div.append(label, bar, value);
+
+        // wrapper row 
+        var row = $('<div class="row attribute-row">');
+        row.append(bar_div);
+        return row;
+    }
+
+    function generate_report() {
+        console.log("Generating report");
+
+        // Basic info
+
+
+        // Get player attributes
+        var panel = $("#attribute-panel");
+        var bars = panel.find(".attribute-bar");
+        for (var i = 0; i < bars.length; i++) {
+            console.log(bars[i]);
+        }
+    }
+
+    generate_attribute_panel("#attribute-panel");
+    </script>
+    <script>
+    for (var j = 0; j < SKILLS.length; j++) {
+        var skill = SKILLS[j];
+        console.log(skill);
+        $('#' + skill + '-bar').mousemove(function() {
+            console.log($('#' + skill + '-bar').val());
+            $('#' + skill + '-value').text($('#' + skill + '-bar').val());
+        });
+    }
+    </script>
+    <script src="/attributes.js"></script>
+    <script src="/pitch.js"></script>
+</body>
