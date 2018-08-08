@@ -86,4 +86,58 @@ function draw_attribute_radar(selector) {
 
     });
 }
+var SKILLS = ["defending", "physical", "speed", "creativity", "attacking", "technical", "aerial", "mental"];
+
+function generate_attribute_panel(selector) {
+    console.log("Generating attribute panel");
+
+    var panel = $(selector);
+    for (var i = 0; i < SKILLS.length; i++) {
+        var bar = create_bar(SKILLS[i]);
+        console.log(bar.html());
+        panel.append(bar);
+
+        bar.on("")
+    }
+    console.log("Attribute panel generated");
+}
+
+function create_bar(name) {
+    var bar_div = $('<div class="attribute-bar">');
+    var label = $('<label class="control-label col-sm-2">');
+    label.text(name.charAt(0).toUpperCase() + name.substr(1));
+    var bar = $('<input type="range" id="' + name + '-bar"  class="attribute-bar" value="1" max="20">');
+    bar.on("change", function(){
+        var targ_id=this.id.substr(0, this.id.length-4)+"-value";
+        console.log(targ_id);
+        console.log($(this).html());
+        $("#"+targ_id).text(this.value);
+    })
+    
+    var value = $('<div><span id="' + name + '-value" class="col-sm-2">1</span></div>');
+    var bar_div = $('<div class="col-sm-6"></div>');
+
+
+    bar_div.append(label, bar, value);
+
+    // wrapper row 
+    var row = $('<div class="row attribute-row">');
+    row.append(bar_div);
+    return row;
+}
+
+function generate_report() {
+    console.log("Generating report");
+
+    // Basic info
+
+
+    // Get player attributes
+    var panel = $("#attribute-panel");
+    var bars = panel.find(".attribute-bar");
+    for (var i = 0; i < bars.length; i++) {
+        console.log(bars[i]);
+    }
+}
 draw_attribute_radar("#attribute-radar");
+generate_attribute_panel("#attribute-panel");

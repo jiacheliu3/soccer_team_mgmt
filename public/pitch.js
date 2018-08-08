@@ -438,10 +438,10 @@ function select_familarity(element){
             console.log("Clicked");
             console.log(data);
             // set the attributes field
-            $("#player-role-attr").text(r["attributes"]);
+            $("#player-role-attr").text(data["attributes"]);
 
             // set the desc field
-            $("#player-role-desc").text(r["desc"]);
+            $("#player-role-desc").text(data["desc"]);
         });
         li.append(a);
         panel.append(li);
