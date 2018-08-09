@@ -379,9 +379,9 @@ function draw_pitch(selector) {
         .attr("fill", "#001400")
         .attr("transform", "translate(880,250)");
 }
-var UNSELECTED_STYLE="fill: green";
-var HOVER_STYLE="fill: orange";
-var SELECTED_STYLE="fill: yellow";
+var UNSELECTED_STYLE="fill: silver";
+var HOVER_STYLE="fill: white";
+var SELECTED_STYLE="fill: green";
 function add_position(selector, data) {
     var panel = d3.select(selector)
         .append("circle")
@@ -435,8 +435,7 @@ function select_familarity(element){
         a.text(roles[i]["name"]);
         li.on("click", function(){
             var data=r;
-            console.log("Clicked");
-            console.log(data);
+
             // set the attributes field
             $("#player-role-attr").text(data["attributes"]);
 
@@ -450,7 +449,7 @@ function select_familarity(element){
     }
 
 }
-function select_roles(){
+function select_role(){
 
 }
 

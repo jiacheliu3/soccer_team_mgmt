@@ -36,7 +36,7 @@ app.use(function(req, res, next) {
 
 var httpServer = http.createServer(app);
 
-httpServer.listen(80);
+httpServer.listen(8080);
 
 /* ----------------------------------------------------
     

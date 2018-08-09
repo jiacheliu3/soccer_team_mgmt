@@ -95,7 +95,7 @@ function generate_attribute_panel(selector) {
     var panel = $(selector);
     for (var i = 0; i < SKILLS.length; i++) {
         var bar = create_bar(SKILLS[i]);
-        console.log(bar.html());
+        // console.log(bar.html());
         panel.append(bar);
 
         bar.on("")
@@ -120,8 +120,13 @@ function create_bar(name) {
         // console.log(targ_id);
         // console.log($(this).html());
         var current_bar=$("#"+n+"-bar");
-        console.log(current_bar);
-        $("#" + targ_id).text(current_bar.value);
+        console.log("current bar value:");
+        console.log(current_bar.val());
+
+        var targ=$("#" + targ_id);
+        console.log("Targ");
+        console.log(targ);
+        targ.text(current_bar.val());
     })
 
     var value = $('<div class="col-sm-2"><span id="' + name + '-value">1</span></div>');
@@ -156,6 +161,7 @@ $.ajax({
   async: false,
   success: function(data){jsonData = data}
 });
+console.log("Init radar chart");
 draw_attribute_radar("#attribute-radar", jsonData);
 generate_attribute_panel("#attribute-panel");
 
@@ -171,7 +177,7 @@ function update_attributes() {
 
     var data = [];
     for (var i = 0; i < SKILLS.length; i++) {
-        var v = inputs[0].value;
+        var v = inputs[i].value;
         data.push({
             "skill": SKILLS[i],
             "count": v
