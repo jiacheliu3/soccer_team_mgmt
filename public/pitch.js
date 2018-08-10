@@ -406,7 +406,7 @@ function add_position(selector, data) {
 
                 // update 
                 select_familarity(this);
-                select_roles(this);
+                // select_roles(this);
             },
         })
         .attr("title", data["title"])
