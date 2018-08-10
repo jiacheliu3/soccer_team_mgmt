@@ -154,13 +154,51 @@ function generate_report() {
         console.log(bars[i]);
     }
 }
-var jsonData;
-$.ajax({
-  dataType: "json",
-  url: "/soccer_team_mgmt/data.json",
-  async: false,
-  success: function(data){jsonData = data}
-});
+var jsonData={
+    "id": "Raphael Varane", 
+    "data": [
+        {
+            "skill": "Defending", 
+            "count": 16
+        }, 
+        {
+            "skill": "Physical", 
+            "count": 14
+        }, 
+        {
+            "skill": "Speed", 
+            "count": 12
+        }, 
+        {
+            "skill": "Creativity", 
+            "count": 10
+        }, 
+        {
+            "skill": "Attacking", 
+            "count": 10
+        }, 
+        {
+            "skill": "Technical", 
+            "count": 11
+        }, 
+        {
+            "skill": "Aerial", 
+            "count": 15
+        }, 
+        {
+            "skill": "Mental", 
+            "count": 14
+        }
+    ]
+};
+console.log("Sample data: ");
+console.log(jsonData);
+// $.ajax({
+//   dataType: "json",
+//   url: "/soccer_team_mgmt/data.json",
+//   async: false,
+//   success: function(data){jsonData = data}
+// });
 console.log("Init radar chart");
 draw_attribute_radar("#attribute-radar", jsonData);
 generate_attribute_panel("#attribute-panel");
