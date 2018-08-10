@@ -157,7 +157,7 @@ function generate_report() {
 var jsonData;
 $.ajax({
   dataType: "json",
-  url: "/data",
+  url: "/soccer_team_mgmt/data.json",
   async: false,
   success: function(data){jsonData = data}
 });
